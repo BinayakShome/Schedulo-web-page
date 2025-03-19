@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Timetable</h2>
+
+        <!-- Dropdown to Select Year -->
+        <label for="yearSelect">Select Year:</label>
+        <select id="yearSelect">
+            <option value="1st_year">1st Year</option>
+            <option value="2nd_year">2nd Year</option>
+            <option value="3rd_year">3rd Year</option>
+            <option value="4th_year">4th Year</option>
+        </select>
+
+        <!-- File Upload -->
+        <label for="fileInput" class="upload-label">Choose PDF or Excel</label>
+        <input type="file" id="fileInput" accept=".pdf,.xlsx">
+        <button onclick="processFile()">Process File</button>
+
+        <!-- Loading Animation -->
+        <div class="loading">
+            <img src="https://i.gifer.com/4V0b.gif" alt="Loading...">
+            <p>Processing...</p>
+        </div>
+
+        <!-- JSON Preview -->
+        <pre id="jsonPreview"></pre>
+        
+        <!-- Upload Button -->
+        <button id="uploadBtn" style="display:none;" onclick="uploadToFirebase()">Upload to Firebase</button>
+        
+        <!-- Message Display -->
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

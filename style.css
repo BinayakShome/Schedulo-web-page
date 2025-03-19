@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+/* Container Box */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: auto;
+    color: black;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Dropdown */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+/* File Upload */
+input[type="file"] {
+    display: none;
+}
+
+.upload-label {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.upload-label:hover {
+    background: #0056b3;
+}
+
+/* Buttons */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Loading */
+.loading {
+    display: none;
+    margin-top: 10px;
+}
+
+.loading img {
+    width: 40px;
+}
+
+/* JSON Preview */
+pre {
+    background: #f8f9fa;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Messages */
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
